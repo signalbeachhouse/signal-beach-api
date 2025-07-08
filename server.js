@@ -1,3 +1,11 @@
+// server.js (CommonJS version)
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const { OpenAI } = require('openai');
+require('dotenv').config();
+
+const app = express();
 const express = require("express");
 const cors = require("cors");
 const OpenAI = require("openai");
@@ -37,4 +45,3 @@ const PORT = process.env.PORT || 8080;
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Signal Beach API listening on port ${PORT}`);
 });
-
